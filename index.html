@@ -1,0 +1,552 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="shortcut icon" href="//abs.twimg.com/favicons /twitter.3.ico">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,500,0,0" />
+    <link href="./css/output.css" rel="stylesheet">
+</head>
+
+<body class=" bg-black text-white">
+    <div class="flex mx-16">
+        <div class="first h-screen pt-3 sticky top-0 pr-9">
+            <div class="logo pb-4 invert">
+                <svg viewBox="0 0 24 24" aria-hidden="true"
+                    class=" w-8  r-4qtqp9 r-yyyyoo r-dnmrzs r-bnwqim r-lrvibr r-m6rgpd r-lrsllp r-1nao33i r-16y2uox r-8kz0gk">
+                    <g>
+                        <path
+                            d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z">
+                        </path>
+                    </g>
+                </svg>
+            </div>
+            <div class="sidebar ">
+                <ul class="flex flex-col text-xl ">
+                    <li
+                        class="flex justify-start items-center gap-4  w-fit hover:rounded-4xl pt-3 pb-3 pl-2 pr-7 hover:bg-gray-500/20  hover:cursor-pointer">
+                        <span class="material-symbols-outlined">home</span><span class="hidden md:block">Home
+                        </span>
+                    </li>
+                    <li
+                        class="flex justify-start items-center gap-4 w-fit hover:rounded-4xl pt-3 pb-3 pl-2 pr-7 hover:bg-gray-500/20   hover:cursor-pointer">
+                        <span class="material-symbols-outlined">search</span><span class="hidden md:block">Explore
+                        </span>
+                    </li>
+                    <li
+                        class="flex justify-start items-center gap-4 w-fit hover:rounded-4xl pt-3 pb-3 pl-2 pr-7 hover:bg-gray-500/20   hover:cursor-pointer">
+                        <span class="material-symbols-outlined">notifications</span><span
+                            class="hidden md:block">Notifications
+                        </span>
+                    </li>
+                    <li
+                        class="flex justify-start items-center gap-4 w-fit hover:rounded-4xl pt-3 pb-3 pl-2 pr-7 hover:bg-gray-500/20   hover:cursor-pointer">
+                        <span class="material-symbols-outlined">mail</span><span class="hidden md:block">Messages
+                        </span>
+                    </li>
+                    <li
+                        class="flex justify-start items-center gap-4 w-fit hover:rounded-4xl pt-3 pb-3 pl-2 pr-7 hover:bg-gray-500/20   hover:cursor-pointer">
+                        <svg viewBox="0 0 33 32" aria-hidden="true"
+                            class="w-6 invert r-4qtqp9 r-yyyyoo r-dnmrzs r-bnwqim r-lrvibr r-m6rgpd r-1nao33i r-lwhw9o r-cnnz9e">
+                            <g>
+                                <path
+                                    d="M12.745 20.54l10.97-8.19c.539-.4 1.307-.244 1.564.38 1.349 3.288.746 7.241-1.938 9.955-2.683 2.714-6.417 3.31-9.83 1.954l-3.728 1.745c5.347 3.697 11.84 2.782 15.898-1.324 3.219-3.255 4.216-7.692 3.284-11.693l.008.009c-1.351-5.878.332-8.227 3.782-13.031L33 0l-4.54 4.59v-.014L12.743 20.544m-2.263 1.987c-3.837-3.707-3.175-9.446.1-12.755 2.42-2.449 6.388-3.448 9.852-1.979l3.72-1.737c-.67-.49-1.53-1.017-2.515-1.387-4.455-1.854-9.789-.931-13.41 2.728-3.483 3.523-4.579 8.94-2.697 13.561 1.405 3.454-.899 5.898-3.22 8.364C1.49 30.2.666 31.074 0 32l10.478-9.466">
+                                </path>
+                            </g>
+                        </svg><span class="hidden md:block">Grok
+                        </span>
+                    </li>
+                    <li
+                        class="flex justify-start items-center gap-4 w-fit hover:rounded-4xl pt-3 pb-3 pl-2 pr-7 hover:bg-gray-500/20   hover:cursor-pointer">
+                        <span class="material-symbols-outlined">group</span><span class="hidden md:block">Communities
+                        </span>
+                    </li>
+                    <li
+                        class="flex justify-start items-center gap-4 w-fit hover:rounded-4xl pt-3 pb-3 pl-2 pr-7 hover:bg-gray-500/20   hover:cursor-pointer">
+                        <span class="material-symbols-outlined">person</span><span class="hidden md:block">Profile
+                        </span>
+                    </li>
+                    <li
+                        class="flex justify-start items-center  gap-4 w-fit hover:rounded-4xl pt-3 pb-3 pl-2 pr-7 hover:bg-gray-500/20   hover:cursor-pointer">
+                        <span class="material-symbols-outlined text-3xl">pending</span><span
+                            class="hidden md:block">More
+                        </span>
+                    </li>
+
+                    <li><button
+                            class=" border bg-white text-black rounded-4xl  w-[220px] py-3  font-medium">Post</button>
+                    </li>
+                </ul>
+            </div>
+
+        </div>
+        <div class="second relative border border-x-gray-500/50 border-y-black w-[140vw]  " >
+            <div class="02 flex z-10 bg-black sticky top-0 border border-b-gray-500/50 border-black">
+                <div class="line absolute w-16 rounded-full h-1 bottom-0 left-[20%] bg-blue-500"></div>
+                <div class="flex justify-center w-1/2 px-4 py-3.5 white font-bold  hover:bg-gray-500/10">For You</div>
+                <div class="flex justify-center w-1/2 px-4 py-3.5 text-gray-300/50  hover:bg-gray-500/10">Followings
+                </div>
+            </div>
+            <div class="whatshp m-4 mb-0 flex">
+                <div class="img "><img alt="Keshav Singh chauhan" class="border rounded-4xl object-contain border-black"
+                        draggable="true"
+                        src="https://pbs.twimg.com/profile_images/1923355296598016000/aa3-KDH-_normal.jpg"
+                        class="css-9pa8cd"></div>
+                <div class="lines flex flex-col pt-2.5 pl-2.5 w-full ">
+                    <input class="outline-none text-xl " type="text" name="" id="" placeholder="What's is happening?">
+                    <div class="flex gap-1 mt-4 mb-2 hover:cursor-pointer  text-blue-400">
+                        <div>
+                            <span class="material-symbols-outlined ">
+                                globe_asia
+                            </span>
+                        </div>
+                        <div>
+                            Everyone can reply
+                        </div>
+                    </div>
+                    <div class="h-[1px] bg-gray-500/50 w-full"></div>
+                    <div class=" w-full icons full items-center flex justify-between py-2.5 pl-2.5">
+                        <div class="icons  gap-2 text-blue-400 flex justify-evenly">
+                            <span class="material-symbols-outlined hover:cursor-pointer">image</span>
+                            <span class="material-symbols-outlined hover:cursor-pointer">gif_box</span>
+                            <svg viewBox="0 0 33 32" aria-hidden="true"
+                                class="w-5 text-blue-400 hover:cursor-pointer invert r-4qtqp9 r-yyyyoo r-dnmrzs r-bnwqim r-lrvibr r-m6rgpd r-1nao33i r-lwhw9o r-cnnz9e">
+                                <g>
+                                    <path
+                                        d="M12.745 20.54l10.97-8.19c.539-.4 1.307-.244 1.564.38 1.349 3.288.746 7.241-1.938 9.955-2.683 2.714-6.417 3.31-9.83 1.954l-3.728 1.745c5.347 3.697 11.84 2.782 15.898-1.324 3.219-3.255 4.216-7.692 3.284-11.693l.008.009c-1.351-5.878.332-8.227 3.782-13.031L33 0l-4.54 4.59v-.014L12.743 20.544m-2.263 1.987c-3.837-3.707-3.175-9.446.1-12.755 2.42-2.449 6.388-3.448 9.852-1.979l3.72-1.737c-.67-.49-1.53-1.017-2.515-1.387-4.455-1.854-9.789-.931-13.41 2.728-3.483 3.523-4.579 8.94-2.697 13.561 1.405 3.454-.899 5.898-3.22 8.364C1.49 30.2.666 31.074 0 32l10.478-9.466">
+                                    </path>
+                                </g>
+                            </svg>
+                            <span class="material-symbols-outlined hover:cursor-pointer">ballot</span>
+                            <span class="material-symbols-outlined hover:cursor-pointer">sentiment_satisfied</span>
+                            <span class="material-symbols-outlined hover:cursor-pointer">pending_actions</span>
+                            <span class="material-symbols-outlined hover:cursor-pointer">location_on</span>
+                        </div>
+                        <div class="pbtn rounded-full bg-[rgb(120,122,122)] text-black font-bold py-1.5 px-4.5">Post
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <div class="showpost text-blue-500 text-center py-3 border border-y-gray-500/50 border-black">
+                Show 210 posts
+            </div>
+            <div class="posts">
+                <div
+                    class="flex  post hover:cursor-pointer border border-b-gray-500/50 border-black hover:bg-gray-500/10 px-4 py-3 gap-0">
+                    <div class="w-20">
+                        <img alt="" class="rounded-full " draggable="true"
+                            src="https://pbs.twimg.com/profile_images/1923451603740168192/bBoBROAs_normal.jpg"
+                            class="css-9pa8cd">
+                    </div>
+                    <div class="content">
+                        <div class=" flex justify-between  items-center ">
+                            <div class="flex items-center gap-2">
+                                <div class="font-bold hover:underline"> Kekius Maximus</div>
+                                <span class=" text-gray-300/50">
+                                    @elonmusk · May 15
+                                </span>
+
+                            </div>
+                            <div><span class="material-symbols-outlined text-gray-300/50"
+                                    style="font-size: 16px !important;">
+                                    more_horiz
+                                </span>
+                            </div>
+                        </div>
+                        <div class="text leading-5 pt-0.5">
+                            Teslas have automatic overheat protection to cool the car, ensuring the safety of babies and
+                            pets
+                        </div>
+                        <div>
+                            <img alt="Image" class="py-3 rounded-xl" draggable="true"
+                                src="https://pbs.twimg.com/media/GrFilX9bkAAyX9J?format=jpg&amp;name=small"
+                                class="css-9pa8cd">
+                        </div>
+                        <div class="icons  flex justify-between   items-center text-gray-300/50 text-sm">
+                            <div class="flex justify-center items-center gap-1 hover:text-red-400 "><span class="material-symbols-outlined "
+                                    style="font-size: 17px !important;">chat_bubble</span><span>408</span></div>
+                            <div class="flex justify-center items-center gap-1 hover:text-red-400"><span class="material-symbols-outlined "
+                                    style="font-size: 17px !important;">repeat</span><span>4.4k</span></div>
+                            <div class="flex justify-center items-center gap-1 hover:text-red-400"><span class="material-symbols-outlined "
+                                    style="font-size: 17px !important;">favorite</span><span>69k</span></div>
+                            <div class="flex justify-center items-center gap-1 hover:text-red-400"><span class="material-symbols-outlined "
+                                    style="font-size: 17px !important;">bar_chart</span><span>1.2M</span></div>
+                            <div class="flex justify-center items-center gap-1 hover:text-red-400"><span class="material-symbols-outlined "
+                                    style="font-size: 17px !important;">bookmark</span><span
+                                    class="material-symbols-outlined " style="font-size: 17px !important;">upload</span>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+                <div
+                    class="flex  post hover:cursor-pointer border border-b-gray-500/50 border-black hover:bg-gray-500/10 px-4 py-3 gap-0">
+                    <div class="w-20">
+                        <img alt="" class="rounded-full " draggable="true"
+                            src="https://pbs.twimg.com/profile_images/1923451603740168192/bBoBROAs_normal.jpg"
+                            class="css-9pa8cd">
+                    </div>
+                    <div class="content">
+                        <div class=" flex justify-between  items-center ">
+                            <div class="flex items-center gap-2">
+                                <div class="font-bold hover:underline"> Kekius Maximus</div>
+                                <span class=" text-gray-300/50">
+                                    @elonmusk · May 15
+                                </span>
+
+                            </div>
+                            <div><span class="material-symbols-outlined text-gray-300/50"
+                                    style="font-size: 16px !important;">
+                                    more_horiz
+                                </span>
+                            </div>
+                        </div>
+                        <div class="text leading-5 pt-0.5">
+                            Teslas have automatic overheat protection to cool the car, ensuring the safety of babies and
+                            pets
+                        </div>
+                        <div>
+                            <img alt="Image" class="py-3 rounded-xl" draggable="true"
+                                src="https://pbs.twimg.com/media/GrFilX9bkAAyX9J?format=jpg&amp;name=small"
+                                class="css-9pa8cd">
+                        </div>
+                        <div class="icons  flex justify-between  items-center text-gray-300/50 text-sm">
+                            <div class="flex justify-center items-center gap-1 hover:text-red-400"><span class="material-symbols-outlined "
+                                    style="font-size: 17px !important;">chat_bubble</span><span>408</span></div>
+                            <div class="flex justify-center items-center gap-1 hover:text-red-400"><span class="material-symbols-outlined "
+                                    style="font-size: 17px !important;">repeat</span><span>4.4k</span></div>
+                            <div class="flex justify-center items-center gap-1 hover:text-red-400"><span class="material-symbols-outlined "
+                                    style="font-size: 17px !important;">favorite</span><span>69k</span></div>
+                            <div class="flex justify-center items-center gap-1 hover:text-red-400"><span class="material-symbols-outlined "
+                                    style="font-size: 17px !important;">bar_chart</span><span>1.2M</span></div>
+                            <div class="flex justify-center items-center gap-1 hover:text-red-400"><span class="material-symbols-outlined "
+                                    style="font-size: 17px !important;">bookmark</span><span
+                                    class="material-symbols-outlined " style="font-size: 17px !important;">upload</span>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+                <div
+                    class="flex  post hover:cursor-pointer border border-b-gray-500/50 border-black hover:bg-gray-500/10 px-4 py-3 gap-0">
+                    <div class="w-20">
+                        <img alt="" class="rounded-full " draggable="true"
+                            src="https://pbs.twimg.com/profile_images/1923451603740168192/bBoBROAs_normal.jpg"
+                            class="css-9pa8cd">
+                    </div>
+                    <div class="content">
+                        <div class=" flex justify-between  items-center ">
+                            <div class="flex items-center gap-2">
+                                <div class="font-bold hover:underline"> Kekius Maximus</div>
+                                <span class=" text-gray-300/50">
+                                    @elonmusk · May 15
+                                </span>
+
+                            </div>
+                            <div><span class="material-symbols-outlined text-gray-300/50"
+                                    style="font-size: 16px !important;">
+                                    more_horiz
+                                </span>
+                            </div>
+                        </div>
+                        <div class="text leading-5 pt-0.5">
+                            Teslas have automatic overheat protection to cool the car, ensuring the safety of babies and
+                            pets
+                        </div>
+                        <div>
+                            <img alt="Image" class="py-3 rounded-xl" draggable="true"
+                                src="https://pbs.twimg.com/media/GrFilX9bkAAyX9J?format=jpg&amp;name=small"
+                                class="css-9pa8cd">
+                        </div>
+                        <div class="icons  flex justify-between  items-center text-gray-300/50 text-sm">
+                            <div class="flex justify-center items-center gap-1 hover:text-red-400"><span class="material-symbols-outlined "
+                                    style="font-size: 17px !important;">chat_bubble</span><span>408</span></div>
+                            <div class="flex justify-center items-center gap-1 hover:text-red-400"><span class="material-symbols-outlined "
+                                    style="font-size: 17px !important;">repeat</span><span>4.4k</span></div>
+                            <div class="flex justify-center items-center gap-1 hover:text-red-400"><span class="material-symbols-outlined "
+                                    style="font-size: 17px !important;">favorite</span><span>69k</span></div>
+                            <div class="flex justify-center items-center gap-1 hover:text-red-400"><span class="material-symbols-outlined "
+                                    style="font-size: 17px !important;">bar_chart</span><span>1.2M</span></div>
+                            <div class="flex justify-center items-center gap-1 hover:text-red-400"><span class="material-symbols-outlined "
+                                    style="font-size: 17px !important;">bookmark</span><span
+                                    class="material-symbols-outlined " style="font-size: 17px !important;">upload</span>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+                <div
+                    class="flex  post hover:cursor-pointer border border-b-gray-500/50 border-black hover:bg-gray-500/10 px-4 py-3 gap-0">
+                    <div class="w-20">
+                        <img alt="" class="rounded-full " draggable="true"
+                            src="https://pbs.twimg.com/profile_images/1923451603740168192/bBoBROAs_normal.jpg"
+                            class="css-9pa8cd">
+                    </div>
+                    <div class="content">
+                        <div class=" flex justify-between  items-center ">
+                            <div class="flex items-center gap-2">
+                                <div class="font-bold hover:underline"> Kekius Maximus</div>
+                                <span class=" text-gray-300/50">
+                                    @elonmusk · May 15
+                                </span>
+
+                            </div>
+                            <div><span class="material-symbols-outlined text-gray-300/50"
+                                    style="font-size: 16px !important;">
+                                    more_horiz
+                                </span>
+                            </div>
+                        </div>
+                        <div class="text leading-5 pt-0.5">
+                            Teslas have automatic overheat protection to cool the car, ensuring the safety of babies and
+                            pets
+                        </div>
+                        <div>
+                            <img alt="Image" class="py-3 rounded-xl" draggable="true"
+                                src="https://pbs.twimg.com/media/GrFilX9bkAAyX9J?format=jpg&amp;name=small"
+                                class="css-9pa8cd">
+                        </div>
+                        <div class="icons  flex justify-between  items-center text-gray-300/50 text-sm">
+                            <div class="flex justify-center items-center gap-1 hover:text-red-400"><span class="material-symbols-outlined "
+                                    style="font-size: 17px !important;">chat_bubble</span><span>408</span></div>
+                            <div class="flex justify-center items-center gap-1 hover:text-red-400"><span class="material-symbols-outlined "
+                                    style="font-size: 17px !important;">repeat</span><span>4.4k</span></div>
+                            <div class="flex justify-center items-center gap-1 hover:text-red-400"><span class="material-symbols-outlined "
+                                    style="font-size: 17px !important;">favorite</span><span>69k</span></div>
+                            <div class="flex justify-center items-center gap-1 hover:text-red-400"><span class="material-symbols-outlined "
+                                    style="font-size: 17px !important;">bar_chart</span><span>1.2M</span></div>
+                            <div class="flex justify-center items-center gap-1 hover:text-red-400"><span class="material-symbols-outlined "
+                                    style="font-size: 17px !important;">bookmark</span><span
+                                    class="material-symbols-outlined " style="font-size: 17px !important;">upload</span>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+                <div
+                    class="flex  post hover:cursor-pointer border border-b-gray-500/50 border-black hover:bg-gray-500/10 px-4 py-3 gap-0">
+                    <div class="w-20">
+                        <img alt="" class="rounded-full " draggable="true"
+                            src="https://pbs.twimg.com/profile_images/1923451603740168192/bBoBROAs_normal.jpg"
+                            class="css-9pa8cd">
+                    </div>
+                    <div class="content">
+                        <div class=" flex justify-between  items-center ">
+                            <div class="flex items-center gap-2">
+                                <div class="font-bold hover:underline"> Kekius Maximus</div>
+                                <span class=" text-gray-300/50">
+                                    @elonmusk · May 15
+                                </span>
+
+                            </div>
+                            <div><span class="material-symbols-outlined text-gray-300/50"
+                                    style="font-size: 16px !important;">
+                                    more_horiz
+                                </span>
+                            </div>
+                        </div>
+                        <div class="text leading-5 pt-0.5">
+                            Teslas have automatic overheat protection to cool the car, ensuring the safety of babies and
+                            pets
+                        </div>
+                        <div>
+                            <img alt="Image" class="py-3 rounded-xl" draggable="true"
+                                src="https://pbs.twimg.com/media/GrFilX9bkAAyX9J?format=jpg&amp;name=small"
+                                class="css-9pa8cd">
+                        </div>
+                        <div class="icons  flex justify-between  items-center text-gray-300/50 text-sm">
+                            <div class="flex justify-center items-center gap-1 hover:text-red-400"><span class="material-symbols-outlined "
+                                    style="font-size: 17px !important;">chat_bubble</span><span>408</span></div>
+                            <div class="flex justify-center items-center gap-1 hover:text-red-400"><span class="material-symbols-outlined "
+                                    style="font-size: 17px !important;">repeat</span><span>4.4k</span></div>
+                            <div class="flex justify-center items-center gap-1 hover:text-red-400"><span class="material-symbols-outlined "
+                                    style="font-size: 17px !important;">favorite</span><span>69k</span></div>
+                            <div class="flex justify-center items-center gap-1 hover:text-red-400"><span class="material-symbols-outlined "
+                                    style="font-size: 17px !important;">bar_chart</span><span>1.2M</span></div>
+                            <div class="flex justify-center items-center gap-1 hover:text-red-400"><span class="material-symbols-outlined "
+                                    style="font-size: 17px !important;">bookmark</span><span
+                                    class="material-symbols-outlined " style="font-size: 17px !important;">upload</span>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+                <div
+                    class="flex  post hover:cursor-pointer border border-b-gray-500/50 border-black hover:bg-gray-500/10 px-4 py-3 gap-0">
+                    <div class="w-20">
+                        <img alt="" class="rounded-full " draggable="true"
+                            src="https://pbs.twimg.com/profile_images/1923451603740168192/bBoBROAs_normal.jpg"
+                            class="css-9pa8cd">
+                    </div>
+                    <div class="content">
+                        <div class=" flex justify-between  items-center ">
+                            <div class="flex items-center gap-2">
+                                <div class="font-bold hover:underline"> Kekius Maximus</div>
+                                <span class=" text-gray-300/50">
+                                    @elonmusk · May 15
+                                </span>
+
+                            </div>
+                            <div><span class="material-symbols-outlined text-gray-300/50"
+                                    style="font-size: 16px !important;">
+                                    more_horiz
+                                </span>
+                            </div>
+                        </div>
+                        <div class="text leading-5 pt-0.5">
+                            Teslas have automatic overheat protection to cool the car, ensuring the safety of babies and
+                            pets
+                        </div>
+                        <div>
+                            <img alt="Image" class="py-3 rounded-xl" draggable="true"
+                                src="https://pbs.twimg.com/media/GrFilX9bkAAyX9J?format=jpg&amp;name=small"
+                                class="css-9pa8cd">
+                        </div>
+                        <div class="icons  flex justify-between  items-center text-gray-300/50 text-sm">
+                            <div class="flex justify-center items-center gap-1 hover:text-red-400"><span class="material-symbols-outlined "
+                                    style="font-size: 17px !important;">chat_bubble</span><span>408</span></div>
+                            <div class="flex justify-center items-center gap-1 hover:text-red-400"><span class="material-symbols-outlined "
+                                    style="font-size: 17px !important;">repeat</span><span>4.4k</span></div>
+                            <div class="flex justify-center items-center gap-1 hover:text-red-400"><span class="material-symbols-outlined "
+                                    style="font-size: 17px !important;">favorite</span><span>69k</span></div>
+                            <div class="flex justify-center items-center gap-1 hover:text-red-400"><span class="material-symbols-outlined "
+                                    style="font-size: 17px !important;">bar_chart</span><span>1.2M</span></div>
+                            <div class="flex justify-center items-center gap-1 hover:text-red-400"><span class="material-symbols-outlined "
+                                    style="font-size: 17px !important;">bookmark</span><span
+                                    class="material-symbols-outlined " style="font-size: 17px !important;">upload</span>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="third hidden md:block  pt-1 w-full">
+            <div class="sticky top-0">
+                <div class="search ml-7 mr-1.5 text-white">
+                    <div class="border border-gray-500/50 rounded-4xl w-full px-4 py-2 flex items-center gap-1  ">
+                        <span class="material-symbols-outlined " style="font-size: 16px !important;">search</span>
+                        <input type="text" placeholder="Search" class="text-white ">
+                    </div>
+                </div>
+                <div class="whatsh   ml-7 mr-1.5 my-4 border border-gray-500/50 rounded-2xl ">
+                    <h3 class="text-xl  px-4 py-2  font-bold">What's Happening</h3>
+                    <div class="news  ">
+                        <div class="hover:cursor-pointer hover:bg-gray-500/10 px-4 py-2.5">
+                            <div class="flex justify-between items-center text-sm text-gray-300/50">
+                                Trending in India
+                                <span class="material-symbols-outlined" style="font-size: 16px !important;">
+                                    more_horiz
+                                </span>
+                            </div>
+                            <div class=" font-bold">
+                                #NuclearLeak
+                            </div>
+                            <div class="text-sm text-gray-300/50">
+                                14.8K posts
+                            </div>
+                        </div>
+                        <div class="hover:cursor-pointer hover:bg-gray-500/10 px-4 py-2.5">
+                            <div class="flex justify-between items-center text-sm text-gray-300/50">
+                                Trending in India
+                                <span class="material-symbols-outlined" style="font-size: 16px !important;">
+                                    more_horiz
+                                </span>
+                            </div>
+                            <div class=" font-bold">
+                                #Turkiye
+                            </div>
+                            <div class="text-sm text-gray-300/50">
+                                2,896 posts
+                            </div>
+                        </div>
+                        <div class="hover:cursor-pointer hover:bg-gray-500/10 px-4 py-2.5">
+                            <div class="flex justify-between items-center text-sm text-gray-300/50">
+                                Politics · Trending
+                                <span class="material-symbols-outlined" style="font-size: 16px !important;">
+                                    more_horiz
+                                </span>
+                            </div>
+                            <div class=" font-bold">
+                                #OperationSindoor
+                            </div>
+                            <div class="text-sm text-gray-300/50">
+                                5,596 posts
+                            </div>
+                        </div>
+                        <div class="hover:cursor-pointer hover:bg-gray-500/10 px-4 py-2.5">
+                            <div class="flex justify-between items-center text-sm text-gray-300/50">
+                                Trending in India
+                                <span class="material-symbols-outlined" style="font-size: 16px !important;">
+                                    more_horiz
+                                </span>
+                            </div>
+                            <div class=" font-bold">
+                                #अन्नदान_महादान
+                            </div>
+                            <div class="text-sm text-gray-300/50">
+                                27.3K posts
+                            </div>
+                        </div>
+                        <h3 class="px-4 py-4.5  hover:cursor-pointer  text-sm text-blue-400">Show more</h3>
+                    </div>
+                </div>
+                <div class="whotf  ml-7 mr-1.5 my-4 border border-gray-500/50 rounded-2xl ">
+                    <h3 class="text-xl px-4 py-2  font-bold">Who to follow</h3>
+                    <div class="news  ">
+                        <div class="hover:cursor-pointer flex justify-between items-center hover:bg-gray-500/10 px-4 ">
+                            <div class="flex gap-1">
+                                <div><img src="./du.png" style="height: 40px !important;" alt=""></div>
+                                <div>
+                                    <div class="font-bold">Vinay Chauhan</div>
+                                    <div class="text-sm text-gray-300/50">
+                                        @vinaychauhan
+                                    </div>
+                                </div>
+                            </div>
+                            <button class="rounded-2xl bg-white font-medium px-4  my-4.5 py-1 text-black">
+                                Follow
+                            </button>
+                        </div>
+                        <div class="hover:cursor-pointer flex justify-between items-center hover:bg-gray-500/10 px-4 ">
+                            <div class="flex gap-1">
+                                <div><img src="./du.png" style="height: 40px !important;" alt=""></div>
+                                <div>
+                                    <div class="font-bold">Narender Modi</div>
+                                    <div class="text-sm text-gray-300/50">
+                                        @PmofIndian
+                                    </div>
+                                </div>
+                            </div>
+                            <button class="rounded-2xl bg-white font-medium px-4  my-4.5 py-1 text-black">
+                                Follow
+                            </button>
+                        </div>
+                        <div class="hover:cursor-pointer flex justify-between items-center hover:bg-gray-500/10 px-4 ">
+                            <div class="flex gap-1">
+                                <div><img src="./du.png" style="height: 40px !important;" alt=""></div>
+                                <div>
+                                    <div class="font-bold">University of Delhi</div>
+                                    <div class="text-sm text-gray-300/50">
+                                        @univofDelhi
+                                    </div>
+                                </div>
+                            </div>
+                            <button class="rounded-2xl bg-white font-medium px-4  my-4.5 py-1 text-black">
+                                Follow
+                            </button>
+                        </div>
+                        <h3 class="px-4 py-4.5   hover:cursor-pointer text-sm text-blue-400">Show more</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+</body>
+
+</html>
